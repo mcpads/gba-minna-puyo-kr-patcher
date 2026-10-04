@@ -41,8 +41,7 @@ cargo run --release -- verify-source --rom path/to/original.gba
 | 한국어 그래픽 | `assets/graphics/{character-surfaces,course-surfaces,ticket-localized,effects}/` | 각 `manifest.json`과 그것이 가리키는 PNG·JSON |
 | 원문 전사와 문안 결정 | `config/*.json` (`source.json` 제외) | 원문 해시 결속, 문안 결정, 원본 글리프 대응표 등 |
 
-각 입력이 요구하는 파일 이름은 소스의 `crate::managed_input::read` 호출과 그래픽 매니페스트 읽기 코드에서 확인할 수 있습니다. 마스크와 대체표는 다음 폰트로 만들었습니다. 빌드는 폰트 파일을 읽지 않지만, 마스크에 기록된 폰트 SHA-256이 아래 값과 다르면 진행하지 않습니다. 각 폰트의 라이선스는 배포처에서 확인하세요.
-
+각 입력이 요구하는 파일 이름은 소스의 `crate::managed_input::read` 호출과 그래픽 매니페스트 읽기 코드에서 확인할 수 있습니다. 마스크와 대체표는 다음 폰트로 만들었습니다. 빌드는 폰트 파일을 읽지 않지만, 마스크에 기록된 폰트 SHA-256이 아래 값과 다르면 진행하지 않습니다.
 | 폰트 | 배포처 | SHA-256 |
 | --- | --- | --- |
 | Galmuri11 v2.40.3 | [Galmuri](https://github.com/quiple/galmuri) | `2c709890595668f7bdb6df408420fda957dde0288e95b31a1cc17a2ab98b4b4f` |
