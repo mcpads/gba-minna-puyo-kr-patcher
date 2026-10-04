@@ -1,0 +1,15 @@
+/target/
+/roms/
+/out/
+/assets/
+/config/*
+!/config/source.json
+*.gba
+*.bps
+*.sav
+*.srm
+*.state
+.DS_Store
+.claude/
+.emucap/
+.worktrees/
